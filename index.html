@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <h1 id="result">0</h1>
+    <button id="plusbutton">+</button>
+    <button id="minus">-</button>
+</body>
+<script>
+    let mycounter = 0;
+    //get the + button
+    const plusButton = document.getElementById("plusbutton");
+    const minusButton = document.getElementById("minus");
+    // get h1 element content
+    const result = document.getElementById("result");
+    // increase the value of content in h1
+    plusButton.addEventListener("click", function () {
+        mycounter = mycounter + 1;
+        result.innerText = mycounter;
+    })
+    minusButton.addEventListener("click", function () {
+        mycounter = mycounter - 1;
+        result.innerText = mycounter;
+    })
+
+</script>
+
+</html>
